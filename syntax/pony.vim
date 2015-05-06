@@ -138,7 +138,6 @@ hi def link ponyCapMod          StorageClass
 syn keyword ponySpecial         compiler_intrinsic
 hi def link ponySpecial         Special
 
-"syn match   ponyAny             "\<_\>"
 syn keyword ponyAny             _
 hi def link ponyAny             Special
 
@@ -153,7 +152,7 @@ syn region  ponyConst           transparent start=+{+ end=+}+ contains=TOP,ponyC
 
 hi def link ponyParenError      Error
 hi def link ponyArrayError      Error
-hi def link ponyMethodParens	Function
+hi def link ponyConstError      Error
 
 " Methods
 
