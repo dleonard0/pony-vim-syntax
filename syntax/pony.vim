@@ -8,6 +8,13 @@ if exists("b:current_syntax")
   finish
 endif
 
+" For syntastic as the 'pony' filetype is not officially registered.
+if exists('g:syntastic_extra_filetypes')
+    call add(g:syntastic_extra_filetypes, 'pony')
+else
+    let g:syntastic_extra_filetypes = ['pony']
+endif
+
 " TODO add markdown to triple-comments
 
 syn case match
