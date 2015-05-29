@@ -57,7 +57,7 @@ hi def link ponyIntError        Error
 
 " Identifiers
 
-syn match   ponyId              "\<\a[a-zA-Z0-9_']*"
+syn match   ponyId              "\<\a[a-zA-Z0-9_']*" nextgroup=ponyCap,ponyCapMod
 syn match   ponyPrivateId       "\<_[a-zA-Z0-9_']\+"
 syn cluster PonyIdentifier	contains=ponyId,ponyPrivateId
 "hi def link ponyId              Identifier
