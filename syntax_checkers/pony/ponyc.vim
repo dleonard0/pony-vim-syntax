@@ -23,11 +23,8 @@ function! SyntaxCheckers_pony_ponyc_GetLocList() dict
     " package imports if the current file is nested under a sub-directory.
     let n = expand('%:p:h')
 
-    " NOTE: The `-p /usr/lib/pony` flag is a downstream (Arch Linux) change
-    " which installs the standard packages to this location.  This should be
-    " fixed upstream soon: <https://github.com/CausalityLtd/ponyc/issues/172>
     let makeprg = self.makeprgBuild({
-                \ 'args': '-p /usr/lib/pony --pass=expr',
+                \ 'args': '--pass=expr',
                 \ 'fname': n})
 
     let errorformat =
