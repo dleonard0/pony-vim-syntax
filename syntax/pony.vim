@@ -121,6 +121,7 @@ syn keyword ponyStatement       return break continue
 syn keyword ponyKeyword         error
 syn keyword ponyConditional	if then else elseif match
 syn keyword ponyKeyword         do end
+syn keyword ponyKeyword         in
 syn keyword ponyRepeat          while repeat until for
 syn keyword ponyKeyword         with 
 syn keyword ponyTry		try recover
