@@ -84,8 +84,8 @@ syn match   ponyMethod          contained "\<_[a-zA-Z0-9_']\+"
 hi def link ponyMethod          Function
 hi def link ponyMethodKeyword   Keyword
 
-syn region  ponyVarDecl         matchgroup=ponyVarKeyword start=+\<\%(var\|let\)\>+ end=+[:=]\@=+ contains=ponyVar,@PonyComment
-syn keyword ponyVarKeyword      contained var let
+syn region  ponyVarDecl         matchgroup=ponyVarKeyword start=+\<\%(var\|let\|embed\)\>+ end=+[:=]\@=+ contains=ponyVar,@PonyComment
+syn keyword ponyVarKeyword      contained var let embed
 syn match   ponyVar             contained "\<\a[a-zA-Z0-9_']*"
 syn match   ponyVar             contained "\<_[a-zA-Z0-9_']\+"
 hi def link ponyVar             Identifier
